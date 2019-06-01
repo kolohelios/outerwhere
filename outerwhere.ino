@@ -1,7 +1,9 @@
 #include "src/FadeLED/FadeLED.h"
+#include "src/WiFiConnectivity/WiFiConnectivity.h"
 #include "Arduino.h"
 
 FadeLED led(D5, D7, D6, false);
+WiFiConnectivity wifiConnectivity(<SSID>, <PASSPHRASE>>);
 
 void setup()
 {
@@ -26,4 +28,5 @@ void loop()
   led.turnOn();
   delay(5000);
   led.turnOff();
+  delay(5000);
 }

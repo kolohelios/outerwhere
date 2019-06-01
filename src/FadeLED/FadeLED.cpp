@@ -16,8 +16,8 @@ FadeLED::FadeLED(int redPin, int greenPin, int bluePin, bool isCathode)
 void FadeLED::setColor(int red, int green, int blue)
 {
   _redPinIntensity = _isCathode ? red : _brightness - red;
-  _bluePinIntensity = _isCathode ? blue : _brightness - blue;
   _greenPinIntensity = _isCathode ? green : _brightness - green;
+  _bluePinIntensity = _isCathode ? blue : _brightness - blue;
 }
 
 void FadeLED::turnOn()
