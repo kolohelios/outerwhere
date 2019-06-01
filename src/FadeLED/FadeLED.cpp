@@ -8,3 +8,7 @@ FadeLED::FadeLED(int redPin, int greenPin, int bluePin)
   _greenPin = greenPin;
   _bluePin = bluePin;
 }
+
+void FadeLED::setColor(int red, int green, int blue)
+{
+}
