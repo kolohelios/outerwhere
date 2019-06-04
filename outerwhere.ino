@@ -1,8 +1,8 @@
 #include "src/FadeLED/FadeLED.h"
 #include "src/WiFiConnectivity/WiFiConnectivity.h"
+#include "src/TaskScheduler/src/TaskScheduler.h"
 #include "Arduino.h"
 #include "arduino_secrets.h"
-#include "TaskScheduler.h"
 
 FadeLED led(D5, D7, D6, false);
 WiFiConnectivity wifiConnectivity(SECRET_SSID, SECRET_PASSPHRASE);
